@@ -3,16 +3,12 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Tarwann Test 2560</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+  render(){
+    return(
+      <div>
+        <h1>Hello Tarwann</h1>
+        <p>ผมรักตาหวานมากๆเลยนะครับตาหวานรู้ตัวบ้างมั้ย</p>
+
       </div>
     );
   }
