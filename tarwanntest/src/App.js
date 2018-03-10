@@ -8,7 +8,7 @@ class App extends Component {
       <div>
         <Header />
         <Headimage />
-        <Content name="Tarwann BNK48 Naja" />
+        <Content name="Tarwann BNK48 Naja" price="300 Baht"/>
         <Footer />
       </div>
     );
@@ -16,10 +16,20 @@ class App extends Component {
 }
 
 class Header extends Component{
+  constructor(){
+    super();
+    this.state = {
+        name : "Tarwann Naja"
+    }
+  }
   render(){
+    setInterval(()=>{
+        this.setState({name : "คนดีด 2018"});
+    },1000);
     return(
         <div className="Header">
           <h1>Tarwann BNK48 Official Fansite</h1>
+          <h2>{this.state.name}</h2>
         </div>
     );
   }
@@ -42,6 +52,7 @@ class Content extends Component{
         <h1>Hello Tarwann</h1>
         <p>The Official Website of Tarwann BNK48 Fanclub</p>
         <p>{this.props.name}</p>
+        <p>{this.props.price}</p>
         <a href="#">Hello</a>
       </div>
     );
