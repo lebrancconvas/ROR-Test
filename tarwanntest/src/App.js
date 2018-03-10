@@ -8,7 +8,7 @@ class App extends Component {
       <div>
         <Header />
         <Headimage />
-        <Content />
+        <Content name="Tarwann BNK48 Naja" />
         <Footer />
       </div>
     );
@@ -41,6 +41,7 @@ class Content extends Component{
       <div className="Content">
         <h1>Hello Tarwann</h1>
         <p>The Official Website of Tarwann BNK48 Fanclub</p>
+        <p>{this.props.name}</p>
         <a href="#">Hello</a>
       </div>
     );
